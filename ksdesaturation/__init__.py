@@ -34,7 +34,7 @@ def main():
 	parser.add_argument("output", help="directory to store the desaturated images, the path will match that given from input except with the given directory as root, directories will be created if they don't exist")
 	args = parser.parse_args()
 
-	read_directory(args.input, args.output)
+	read_directory(args.input.rstrip(os.sep), args.output.rstrip(os.sep))
 
 
 if __name__ == "__main__":
