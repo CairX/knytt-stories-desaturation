@@ -1,3 +1,5 @@
 # Virtual enviorment for Python
 venv/
 
+# PiP
+*.egg-info/
