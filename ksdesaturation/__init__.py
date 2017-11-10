@@ -28,10 +28,14 @@ def read_directory(input, output):
 			desaturate(directory, directory.replace(input, output), filename)
 
 
-if __name__ == "__main__":
+def main():
 	parser = argparse.ArgumentParser(description="Desaturate images in a given directory based on the naming convention of Knytt Stories. Any image matching the naming convention will be desaturated five steps from full-color to black-white. The number at the end of the filename will be incremented by one for each step. If there is an overlap in names they will simply be written over so make sure that the names have enough separation in their number intervals.")
 	parser.add_argument("input", help="directory to look for image to desaturate")
 	parser.add_argument("output", help="directory to store the desaturated images, the path will match that given from input except with the given directory as root, directories will be created if they don't exist")
 	args = parser.parse_args()
 
 	read_directory(args.input, args.output)
+
+
+if __name__ == "__main__":
+	main()
