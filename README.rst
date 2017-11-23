@@ -19,9 +19,9 @@ Installation
         $ pip install .
 
 
-------------------
-Additional Options
-------------------
+---------------
+Command Options
+---------------
 Generated output from the command-line argument ``ksdesaturation --help``.
 
 ::
